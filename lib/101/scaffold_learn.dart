@@ -10,7 +10,7 @@ class ScaffoldLearnView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Scaffold Samples'),
       ),
-      body: const Text('Hello'),
+      body: const Text('Helloo'),
       backgroundColor: Colors.red,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
