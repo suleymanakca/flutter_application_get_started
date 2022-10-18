@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '101/color_learn.dart';
+import '101/image_learn.dart';
 
 void main() {
   runApp(const MyApp()); // Ali Dayi
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          cardTheme: CardTheme(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20))),
           errorColor: ColorsItems.dingley,
           appBarTheme: const AppBarTheme(
             centerTitle: true,
@@ -23,7 +27,7 @@ class MyApp extends StatelessWidget {
             systemOverlayStyle: SystemUiOverlayStyle.light,
             elevation: 0,
           )),
-      home: const ColorLearn(),
+      home: const ImageLearn(),
     );
   }
 }

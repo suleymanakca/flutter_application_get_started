@@ -41,5 +41,5 @@ class IconSizes {
 }
 
 class IconColors {
-  final Color mandy = Color(0xffED616B);
+  final Color mandy = const Color(0xffED616B);
 }
