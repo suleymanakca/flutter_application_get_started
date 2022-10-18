@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '101/scaffold_learn.dart';
+import 'package:flutter/services.dart';
+import '101/color_learn.dart';
 
 void main() {
   runApp(const MyApp()); // Ali Dayi
@@ -14,8 +15,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(),
-      home: ScaffoldLearnView(),
+      theme: ThemeData.dark().copyWith(
+          errorColor: ColorsItems.dingley,
+          appBarTheme: const AppBarTheme(
+            centerTitle: true,
+            backgroundColor: Colors.transparent,
+            systemOverlayStyle: SystemUiOverlayStyle.light,
+            elevation: 0,
+          )),
+      home: const ColorLearn(),
     );
   }
 }
