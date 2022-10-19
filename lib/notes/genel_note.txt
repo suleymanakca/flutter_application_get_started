@@ -7,4 +7,9 @@
         - tokenı var mı vs kontroller yapılır
 - ortak widgetların style'ları değişemez
     -loading bar
--üst üste bi componentler varsa stack
+- üst üste bi componentler varsa stack
+- widget mı component mi? farkı nedir?
+- immutable, değişmeyen data
+- mainAxisSize: MainAxisSize.min????? sağa yasladı, kritik olabilir
+- opeatörlere göz at ++_counter vs
+- başka bir component, ana componentleri etkilemesin. ex; state

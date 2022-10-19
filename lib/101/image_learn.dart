@@ -12,7 +12,8 @@ class ImageLearn extends StatelessWidget {
           SizedBox(
               height: 300,
               width: 200,
-              child: Image.asset(ImageItems().appleWithBook, fit: BoxFit.cover)),
+              child:
+                  Image.asset(ImageItems().appleWithBook, fit: BoxFit.cover)),
           SizedBox(
               height: 300,
               width: 200,

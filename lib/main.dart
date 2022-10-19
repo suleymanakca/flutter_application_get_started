@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '101/color_learn.dart';
-import '101/column_row_learn.dart';
-import '101/stack_learn.dart';
-import 'demos/stack_demo_view.dart';
+import '101/statefull_life_cycle_learn.dart';
 
 void main() {
   runApp(const MyApp()); // Ali Dayi
@@ -33,7 +31,9 @@ class MyApp extends StatelessWidget {
             systemOverlayStyle: SystemUiOverlayStyle.light,
             elevation: 0,
           )),
-      home: const StackDemoView(),
+      home: const StatefullLifeCycleLearn(
+        message: "Velibb",
+      ),
     );
   }
 }
