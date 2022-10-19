@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '101/color_learn.dart';
-import '101/image_learn.dart';
+import '101/column_row_learn.dart';
+import '101/stack_learn.dart';
+import 'demos/stack_demo_view.dart';
 
 void main() {
   runApp(const MyApp()); // Ali Dayi
@@ -17,6 +19,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          progressIndicatorTheme:
+              const ProgressIndicatorThemeData(color: Colors.red),
+          listTileTheme:
+              const ListTileThemeData(contentPadding: EdgeInsets.zero),
           cardTheme: CardTheme(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20))),
@@ -27,7 +33,7 @@ class MyApp extends StatelessWidget {
             systemOverlayStyle: SystemUiOverlayStyle.light,
             elevation: 0,
           )),
-      home: const ImageLearn(),
+      home: const StackDemoView(),
     );
   }
 }

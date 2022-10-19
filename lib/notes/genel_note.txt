@@ -1,0 +1,10 @@
+- kod içinde gömülü string, sayi vb olmasın
+- kodu bol bol parçala
+- zeplin ???
+- text içinde style'ı Theme'dan okuma kritik
+- mobilde internet olma/olmama durumu kritik
+    - loading state
+        - tokenı var mı vs kontroller yapılır
+- ortak widgetların style'ları değişemez
+    -loading bar
+-üst üste bi componentler varsa stack
