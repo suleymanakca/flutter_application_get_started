@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             elevation: 0,
           )),
       home: const StatefullLifeCycleLearn(
-        message: "Velibb",
+        message: "Veli",
       ),
     );
   }
