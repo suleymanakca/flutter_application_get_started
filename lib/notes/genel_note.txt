@@ -13,3 +13,9 @@
 - mainAxisSize: MainAxisSize.min????? sağa yasladı, kritik olabilir
 - opeatörlere göz at ++_counter vs
 - başka bir component, ana componentleri etkilemesin. ex; state
+- init state: start before the statefull widget creation end die before satefull widget creation again
+- didChangeDependencies: widget veya wigdet içindeki data değiştiğinde çağırılır
+- didUpdateWidget
+- dispose
+- textInputAction
+- BottomNavigationBar

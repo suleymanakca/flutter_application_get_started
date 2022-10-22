@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '101/color_learn.dart';
-import '101/statefull_life_cycle_learn.dart';
+import '101/navigation_learn.dart';
+import 'demos/my_collections_demos.dart';
 
 void main() {
   runApp(const MyApp()); // Ali Dayi
@@ -25,15 +26,26 @@ class MyApp extends StatelessWidget {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20))),
           errorColor: ColorsItems.dingley,
+          textSelectionTheme:
+              const TextSelectionThemeData(selectionColor: Colors.red),
+          inputDecorationTheme: const InputDecorationTheme(
+              filled: true,
+              fillColor: Colors.white,
+              iconColor: Colors.red,
+              border: OutlineInputBorder(),
+              labelStyle: TextStyle(color: Colors.amber),
+              floatingLabelStyle: TextStyle(
+                  color: Colors.red,
+                  fontSize: 24,
+                  fontWeight: FontWeight.w600)),
+          textTheme: const TextTheme(subtitle1: TextStyle(color: Colors.red)),
           appBarTheme: const AppBarTheme(
             centerTitle: true,
             backgroundColor: Colors.transparent,
             systemOverlayStyle: SystemUiOverlayStyle.light,
             elevation: 0,
           )),
-      home: const StatefullLifeCycleLearn(
-        message: "Veli",
-      ),
+      home: const NavigationLearn(),
     );
   }
 }
