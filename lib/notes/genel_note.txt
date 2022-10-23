@@ -20,3 +20,5 @@
 - textInputAction
 - BottomNavigationBar
 - listview
+- TabBarView kritik
+- servisten data çekiliyorsa en mantıklı yöntem PostModel8

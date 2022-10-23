@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '101/color_learn.dart';
-import '101/navigation_learn.dart';
-import 'demos/my_collections_demos.dart';
+import '202/model_learn_view.dart';
+import '202/tab_learn.dart';
 
 void main() {
   runApp(const MyApp()); // Ali Dayi
@@ -18,6 +18,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          tabBarTheme: const TabBarTheme(
+            labelColor: Colors.white,
+            unselectedLabelColor: Colors.red,
+            indicatorSize: TabBarIndicatorSize.label,
+          ),
+          bottomAppBarTheme:
+              const BottomAppBarTheme(shape: CircularNotchedRectangle()),
           progressIndicatorTheme:
               const ProgressIndicatorThemeData(color: Colors.red),
           listTileTheme:
@@ -45,7 +52,7 @@ class MyApp extends StatelessWidget {
             systemOverlayStyle: SystemUiOverlayStyle.light,
             elevation: 0,
           )),
-      home: const NavigationLearn(),
+      home: const ModelLearnView(),
     );
   }
 }
