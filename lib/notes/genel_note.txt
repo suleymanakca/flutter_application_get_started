@@ -17,7 +17,7 @@
 - didChangeDependencies: widget veya wigdet içindeki data değiştiğinde çağırılır
 - didUpdateWidget
 - dispose
-- textInputAction
+- textInputAction: next
 - BottomNavigationBar
 - listview
 - TabBarView kritik
