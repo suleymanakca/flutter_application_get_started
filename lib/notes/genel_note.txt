@@ -23,3 +23,5 @@
 - TabBarView kritik
 - servisten data çekiliyorsa en mantıklı yöntem PostModel8
 - websocket, http requeste göre finans projelerinde daha çok kullanılıyor
+- shimmer, lottie, flutter_spinkit
+- AnimatedCrossFade
