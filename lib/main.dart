@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_application_get_started/202/theme/light_theme.dart';
-import '101/color_learn.dart';
-import '202/package_learn_view.dart';
-import '202/service/service_learn_get_view.dart';
-import '202/service/service_post_learn_view.dart';
-import '202/theme_learn_view.dart';
+import '202/animated_learn_view.dart';
+import '202/image_learn_202.dart';
 
 void main() {
   runApp(const MyApp()); // Ali Dayi
@@ -56,7 +52,7 @@ class MyApp extends StatelessWidget {
       //       systemOverlayStyle: SystemUiOverlayStyle.light,
       //       elevation: 0,
       //     )),
-      home: const ThemeLearnView(),
+      home: const AnimatedLearnView(),
     );
   }
 }

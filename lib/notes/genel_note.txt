@@ -25,3 +25,4 @@
 - websocket, http requeste göre finans projelerinde daha çok kullanılıyor
 - shimmer, lottie, flutter_spinkit
 - AnimatedCrossFade
+- AnimatedList listeye ekleme çıkarma için kullanılıyor
