@@ -9,13 +9,11 @@ class AnimatedLearnView extends StatefulWidget {
   State<AnimatedLearnView> createState() => _AnimatedLearnViewState();
 }
 
-class _AnimatedLearnViewState extends State<AnimatedLearnView>
-    with TickerProviderStateMixin {
+class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    controller =
-        AnimationController(vsync: this, duration: _DurationItems.durationLow);
+    controller = AnimationController(vsync: this, duration: _DurationItems.durationLow);
   }
 
   //Text('data', style: context.textTheme().headline1)
@@ -48,40 +46,25 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView>
       ),
       body: Column(children: [
         ListTile(
-          title: AnimatedOpacity(
-              opacity: _isOpacity ? 1 : 0,
-              duration: _DurationItems.durationLow,
-              child: const Text('data')),
-          trailing: IconButton(
-              onPressed: _changeOpacity,
-              icon: const Icon(Icons.precision_manufacturing_rounded)),
+          title: AnimatedOpacity(opacity: _isOpacity ? 1 : 0, duration: _DurationItems.durationLow, child: const Text('data')),
+          trailing: IconButton(onPressed: _changeOpacity, icon: const Icon(Icons.precision_manufacturing_rounded)),
         ),
         AnimatedDefaultTextStyle(
-          style: (_isVisible
-                  ? context.textTheme().headline1
-                  : context.textTheme().subtitle1) ??
-              const TextStyle(),
+          style: (_isVisible ? context.textTheme().headline1 : context.textTheme().subtitle1) ?? const TextStyle(),
           duration: _DurationItems.durationLow,
           child: const Text('data'),
         ),
         AnimatedIcon(icon: AnimatedIcons.event_add, progress: controller),
         AnimatedContainer(
           duration: _DurationItems.durationLow,
-          height:
-              _isVisible ? kZero : (MediaQuery.of(context).size.width) * 0.2,
+          height: _isVisible ? kZero : (MediaQuery.of(context).size.width) * 0.2,
           width: (MediaQuery.of(context).size.width) * 0.2,
           color: Colors.blue,
           margin: const EdgeInsets.all(5),
         ),
         Expanded(
           child: Stack(
-            children: const [
-              AnimatedPositioned(
-                  top: 30,
-                  curve: Curves.elasticOut,
-                  duration: _DurationItems.durationLow,
-                  child: Text('data'))
-            ],
+            children: const [AnimatedPositioned(top: 30, curve: Curves.elasticOut, duration: _DurationItems.durationLow, child: Text('data'))],
           ),
         ),
         Expanded(
@@ -97,12 +80,7 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView>
 
   AnimatedCrossFade _placeHolderWidget() {
     return AnimatedCrossFade(
-      firstChild: const Placeholder(),
-      secondChild: const SizedBox.shrink(),
-      duration: _DurationItems.durationLow,
-      crossFadeState:
-          _isVisible ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-    );
+        firstChild: const Placeholder(), secondChild: const SizedBox.shrink(), duration: _DurationItems.durationLow, crossFadeState: _isVisible ? CrossFadeState.showFirst : CrossFadeState.showSecond);
   }
 }
 

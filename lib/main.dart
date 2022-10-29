@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_get_started/202/theme/light_theme.dart';
 import '202/animated_learn_view.dart';
-import '202/image_learn_202.dart';
 
 void main() {
   runApp(const MyApp()); // Ali Dayi
@@ -52,7 +51,7 @@ class MyApp extends StatelessWidget {
       //       systemOverlayStyle: SystemUiOverlayStyle.light,
       //       elevation: 0,
       //     )),
-      home: const ImageLearn202(),
+      home: const AnimatedLearnView(),
     );
   }
 }
