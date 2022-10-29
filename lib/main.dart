@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
       //       systemOverlayStyle: SystemUiOverlayStyle.light,
       //       elevation: 0,
       //     )),
-      home: const AnimatedLearnView(),
+      home: const ImageLearn202(),
     );
   }
 }
