@@ -27,3 +27,4 @@
 - AnimatedCrossFade
 - AnimatedList listeye ekleme çıkarma için kullanılıyor
 - ios ve android için package'lar için bazı dosyalara (android için manifest) ekleme yapılmalı.
+- statefull içinde view ile logic ayrılırsa şahane olur

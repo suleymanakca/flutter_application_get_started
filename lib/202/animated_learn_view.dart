@@ -47,7 +47,7 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProvid
       body: Column(children: [
         ListTile(
           title: AnimatedOpacity(opacity: _isOpacity ? 1 : 0, duration: _DurationItems.durationLow, child: const Text('data')),
-          trailing: IconButton(onPressed: _changeOpacity, icon: const Icon(Icons.precision_manufacturing_rounded)),
+          trailing: IconButton(onPressed: _changeOpacity, icon: const Icon(Icons.remove_circle_outline)),
         ),
         AnimatedDefaultTextStyle(
           style: (_isVisible ? context.textTheme().headline1 : context.textTheme().subtitle1) ?? const TextStyle(),
