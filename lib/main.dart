@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_get_started/202/theme/light_theme.dart';
+import '202/alert_learn.dart';
 import '202/sheet_learn.dart';
 
 void main() {
@@ -51,7 +52,7 @@ class MyApp extends StatelessWidget {
       //       systemOverlayStyle: SystemUiOverlayStyle.light,
       //       elevation: 0,
       //     )),
-      home: const SheetLearn(),
+      home: const AlertLearn(),
     );
   }
 }
