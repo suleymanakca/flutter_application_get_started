@@ -15,7 +15,7 @@ class _ListViewBuilderLearnState extends State<ListViewBuilderLearn> {
       appBar: AppBar(),
       body: ListView.separated(
           separatorBuilder: (context, index) {
-            return Divider();
+            return const Divider();
           },
           itemCount: 15,
           itemBuilder: (context, index) {

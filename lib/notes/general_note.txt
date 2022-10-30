@@ -30,3 +30,6 @@
 - statefull içinde view ile logic ayrılırsa şahane olur
 - shared_preferences, caching, key: value
 - compute kavramı
+- bottom sheet -> seçim filtreleme
+- alert -> evet hayır
+- sneak -> indormation
