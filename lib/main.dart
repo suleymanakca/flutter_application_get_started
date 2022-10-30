@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_get_started/202/theme/light_theme.dart';
+import '202/cache/shared_learn_cache.dart';
+import '202/cache/shared_list_cache.dart';
 import '202/form_learn_view.dart';
 
 void main() {
@@ -51,7 +53,7 @@ class MyApp extends StatelessWidget {
       //       systemOverlayStyle: SystemUiOverlayStyle.light,
       //       elevation: 0,
       //     )),
-      home: const FormLearnView(),
+      home: const SharedListCache(),
     );
   }
 }
