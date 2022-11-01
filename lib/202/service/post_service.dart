@@ -16,15 +16,12 @@ abstract class IPostService {
 class PostService implements IPostService {
   final Dio _dio;
 
-  PostService()
-      : _dio =
-            Dio(BaseOptions(baseUrl: 'https://jsonplaceholder.typicode.com/'));
+  PostService() : _dio = Dio(BaseOptions(baseUrl: 'https://jsonplaceholder.typicode.com/'));
 
   @override
   Future<bool> addItemToService(PostModel postModel) async {
     try {
-      final response =
-          await _dio.post(_PostServicePath.posts.name, data: postModel);
+      final response = await _dio.post(_PostServicePath.posts.name, data: postModel);
       return response.statusCode == HttpStatus.created;
     } on DioError catch (error) {
       print(error.message);
@@ -53,8 +50,7 @@ class PostService implements IPostService {
   @override
   Future<bool> putItemToService(PostModel postModel, int id) async {
     try {
-      final response =
-          await _dio.put('${_PostServicePath.posts.name}/$id', data: postModel);
+      final response = await _dio.put('${_PostServicePath.posts.name}/$id', data: postModel);
       return response.statusCode == HttpStatus.ok;
     } on DioError catch (error) {
       print(error.message);
@@ -76,11 +72,9 @@ class PostService implements IPostService {
   }
 
   @override
-  Future<List<PostCommentModel>?> fetchRelatedCoommentsWithPostId(
-      int postId) async {
+  Future<List<PostCommentModel>?> fetchRelatedCoommentsWithPostId(int postId) async {
     try {
-      final response = await _dio.get(_PostServicePath.comments.name,
-          queryParameters: {_PostQueryPaths.postId.name: postId});
+      final response = await _dio.get(_PostServicePath.comments.name, queryParameters: {_PostQueryPaths.postId.name: postId});
       if (response.statusCode == HttpStatus.ok) {
         final _datas = response.data;
 

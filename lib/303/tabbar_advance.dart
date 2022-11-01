@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_get_started/101/icon_learn.dart';
-import 'package:flutter_application_get_started/101/image_learn.dart';
+import 'package:flutter_application_get_started/303/feed_view.dart';
 
-class TabLearn extends StatefulWidget {
-  const TabLearn({super.key});
+import '../101/icon_learn.dart';
+import '../101/image_learn.dart';
+
+class TabAdvanceLearn extends StatefulWidget {
+  const TabAdvanceLearn({super.key});
 
   @override
-  State<TabLearn> createState() => _TabLearnState();
+  State<TabAdvanceLearn> createState() => _TabAdvanceLearnState();
 }
 
-class _TabLearnState extends State<TabLearn> with TickerProviderStateMixin {
+class _TabAdvanceLearnState extends State<TabAdvanceLearn> with TickerProviderStateMixin {
   late final TabController _tabController;
   final double _notcedValue = 10;
   @override
@@ -45,7 +47,11 @@ class _TabLearnState extends State<TabLearn> with TickerProviderStateMixin {
   }
 
   TabBarView _tabBarView() {
-    return TabBarView(physics: const NeverScrollableScrollPhysics(), controller: _tabController, children: [const ImageLearn(), IconLearnView(), const ImageLearn(), IconLearnView()]);
+    return TabBarView(
+      physics: const NeverScrollableScrollPhysics(),
+      controller: _tabController,
+      children: [const FeedView(), IconLearnView(), const ImageLearn(), IconLearnView()],
+    );
   }
 }
 

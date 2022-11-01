@@ -32,4 +32,4 @@
 - compute kavramı
 - bottom sheet -> seçim filtreleme
 - alert -> evet hayır
-- sneak -> indormation
+- sneak -> information
